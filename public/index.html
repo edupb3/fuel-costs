@@ -22,27 +22,32 @@
       <form id="form">
         <div class="form-control">
           <label for="distance">Distância percorrida (Km)</label>
-          <input autofocus type="number" step=".01" oninput="validity.valid||(value='');" id="distance" placeholder="Distância percorrida" />
+          <input autofocus type="number" step=".01" min="0" oninput="validity.valid||(value='');" id="distance" placeholder="Distância percorrida" />
         </div>
 
         <div class="form-control">
           <label for="amount">Preço do combustível (Litro) <br /></label>
-          <input type="number" step=".01" id="amount" oninput="validity.valid||(value='');" placeholder="Preço" />
+          <input type="number" step=".01" id="amount" min="0" oninput="validity.valid||(value='');" placeholder="Preço" />
         </div>
 
         <div class="form-control">
             <label for="consumption">Consumo médio do veículo (Km/L) <br /></label>
-            <input type="number" step=".01" id="consumption" oninput="validity.valid||(value='');" placeholder="Consumo Km/L" />
+            <input type="number" step=".01" id="consumption" min="0" oninput="validity.valid||(value='');" placeholder="Consumo Km/L" />
         </div>
 
-        <button class="btn">Limpar</button>
+        <button class="btn" id="btn_limpar">Limpar</button>
         
         <h2 class="news">Alta dos combustíveis exige mudanças de políticas públicas</h2>
         <article>
           <p>Segundo o INEEP, nos últimos anos, a política de reajustes dos combustíveis ganhou notoriedade no debate público. Por conta do atrelamento de seus preços no Brasil ao valor das cotações externas de petróleo e derivados e das variações no câmbio (preço de paridade de importação, PPI), o brasileiro passou a conviver com uma maior volatilidade e, quando as cotações internacionais estão em alta, com uma rápida subida dos preços da gasolina e do diesel.</p>
           <p>Há alternativas para conter as altas dos preços do petróleo no Brasil, mas essas soluções exigem capacidade de formulação de políticas públicas e uma atuação da Petrobras como um player que priorize o abastecimento interno, não apenas o retorno de curtíssimo prazo.  </p> 
+          <p>A ANP, Agência Nacional do Petróleo, possui um site exclusivo para fornecimento dos históricos dos preços de combustíveis em todo o Brasil.  </p>
+          <address>
+            É possível consultá-lo através do link: <a href="https://preco.anp.gov.br/">https://preco.anp.gov.br/</a>
+          </address>
         </article>
-        <table></table>
+
+        
         
       </form>
     </div>
