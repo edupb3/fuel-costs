@@ -22,17 +22,17 @@
       <form id="form">
         <div class="form-control">
           <label for="distance">Distância percorrida (Km)</label>
-          <input autofocus type="number" step="0.1" id="distance" placeholder="Distância percorrida" />
+          <input autofocus type="number" step=".01" oninput="validity.valid||(value='');" id="distance" placeholder="Distância percorrida" />
         </div>
 
         <div class="form-control">
           <label for="amount">Preço do combustível (Litro) <br /></label>
-          <input type="number" step=".01" id="amount" placeholder="Preço" />
+          <input type="number" step=".01" id="amount" oninput="validity.valid||(value='');" placeholder="Preço" />
         </div>
 
         <div class="form-control">
             <label for="consumption">Consumo médio do veículo (Km/L) <br /></label>
-            <input type="number" step=".01" id="consumption" placeholder="Consumo Km/L" />
+            <input type="number" step=".01" id="consumption" oninput="validity.valid||(value='');" placeholder="Consumo Km/L" />
         </div>
 
         <button class="btn">Limpar</button>
